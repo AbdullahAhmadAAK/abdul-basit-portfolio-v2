@@ -63,17 +63,21 @@
       
     </div> -->
   </div>
-  <div class="mission-vision text-white">
-    <h2>My Mission</h2>
-    <p>
+  <div class="mission-vision text-white ml-10 mb-10">
+    <h2 class="font-extrabold text-[30px]">My Mission</h2>
+    <p
+      class="text-[#9C9C9C] font-normal text-[14px] leading-[24px] tracking-[1%]"
+    >
       My mission is to provide a transformative educational experience that
       fosters intellectual curiosity, critical thinking, and innovation. I am
       committed to equipping students with the knowledge, skills, and ethical
       foundations necessary to excel in their chosen fields and to contribute
       positively to society.
     </p>
-    <h2>My Vision</h2>
-    <p>
+    <h2 class="font-extrabold text-[30px]">My Vision</h2>
+    <p
+      class="text-[#9C9C9C] font-normal text-[14px] leading-[24px] tracking-[1%]"
+    >
       My vision is to be a leading academic institution recognized for
       excellence in education, research, and community engagement. I aspire to
       create a dynamic learning environment that embraces diversity, promotes
