@@ -1,53 +1,59 @@
 <script>
   let boxes = [
     {
-      title: 'Foundation',
-      features: [
-        '4 sessions per week',
-        'Practice material'
-      ],
-      internationalPrice: 'USD 250/month',
-      subcontinentalPrice: 'PKR 30,000/month'
+      title: "Foundation",
+      features: ["4 sessions per week", "Practice material"],
+      internationalPrice: "USD 250/month",
+      subcontinentalPrice: "PKR 30,000/month",
     },
     {
-      title: 'Mastery',
+      title: "Mastery",
       features: [
-        '6 sessions per week',
-        'Practice material',
-        'Mock tests',
-        'WhatsApp support'
+        "6 sessions per week",
+        "Practice material",
+        "Mock tests",
+        "WhatsApp support",
       ],
-      internationalPrice: 'USD 325/month',
-      subcontinentalPrice: 'PKR 40,000/month'
-    }
-  ]
+      internationalPrice: "USD 325/month",
+      subcontinentalPrice: "PKR 40,000/month",
+    },
+  ];
 
-
-  let isSubcontinentToggled = true
+  let isSubcontinentToggled = true;
 
   const toggleInternationalStudents = () => {
-    isSubcontinentToggled = false
-  }
+    isSubcontinentToggled = false;
+  };
 
   const toggleSubcontinentStudents = () => {
-    isSubcontinentToggled = true
-  }
+    isSubcontinentToggled = true;
+  };
 </script>
 
 <section id="study-plans" class="study-plans bg-[#080808] px-32 py-16">
-  
+  <h2 class="text-white text-center font-extrabold text-[30px]">Study Plans</h2>
+  <div
+    class="flex justify-center gap-2 bg-gray-500 w-fit mx-auto text-white my-4 p-1 rounded-md"
+  >
+    <div class="mb-6 md:mb-0 ml-20">
+      <img src="/basit-logo-abp.jpg" alt="Logo" class="h-24 w-auto" />
+    </div>
+    <div class="mb-6 md:mb-0 ml-20">
+      <img src="/basit-logo-abp.jpg" alt="Logo" class="h-24 w-auto" />
+    </div>
 
-  <h2 class="text-white text-center">Study Plans</h2>
-
-  <div class="flex justify-center gap-2 bg-gray-500 w-fit mx-auto text-white my-4 p-1 rounded-md">
-    <button 
-      class="{isSubcontinentToggled ? 'bg-green-400' : 'bg-gray-400 hover:bg-green-300'} rounded-md px-2" 
+    <button
+      class="{isSubcontinentToggled
+        ? 'bg-green-400'
+        : 'bg-gray-400 hover:bg-green-300'} rounded-md px-2 font-extrabold"
       on:click={toggleSubcontinentStudents}
     >
       Indian Subcontinent Students
     </button>
-    <button 
-      class="{!isSubcontinentToggled ? 'bg-green-400' : 'bg-gray-400 hover:bg-green-300'} rounded-md px-2" 
+    <button
+      class="{!isSubcontinentToggled
+        ? 'bg-green-400'
+        : 'bg-gray-400 hover:bg-green-300'} rounded-md px-2 font-extrabold"
       on:click={toggleInternationalStudents}
     >
       International Students
@@ -55,27 +61,36 @@
   </div>
 
   <div class="study-plans-container flex justify-between">
-
     {#each boxes as box}
-      <div class="flex flex-col gap-2 bg-white rounded-xl shadow-md p-[20px] w-[45%]">
+      <div
+        class="flex flex-col gap-2 bg-white rounded-xl shadow-md p-[20px] w-[45%]"
+      >
         <div class="flex justify-between">
-          <h4>{box.title}</h4>
-          <h4>{isSubcontinentToggled ? box.subcontinentalPrice : box.internationalPrice}</h4>
+          <h4 class="font-extrabold">{box.title}</h4>
+          <h4 class="font-extrabold">
+            {isSubcontinentToggled
+              ? box.subcontinentalPrice
+              : box.internationalPrice}
+          </h4>
         </div>
-        
-        <hr>
+
+        <hr />
 
         {#each box.features as feature}
-          <p>
+          <p class="font-normal text-[14px] leading-[24px] tracking-[1%]">
             <span class="checkmark">✔</span>{feature}
           </p>
         {/each}
       </div>
     {/each}
-   
   </div>
 
-  <p class="text-center text-white">
-    Prices last updated on 1st September 2024. For the latest prices, please consult us at this WhatsApp number: +92-3314160816.
+  <p
+    class="text-center text-white font-normal text-[14px] leading-[24px] tracking-[1%] mt-10"
+  >
+    Prices last updated on 1st September 2024. For the latest prices, please
+    consult us at this WhatsApp number: <a href="#" target="u_blank"
+      >+92-3314160816.</a
+    >
   </p>
 </section>
