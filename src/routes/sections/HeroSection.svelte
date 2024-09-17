@@ -16,10 +16,15 @@
         Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
         do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <button
-        class="py-6 px-16 text-[#FFFFFF] bg-[#3F8E00] hover:bg-[#2F6B00] w-fit rounded-sm font-bold text-[16px] border-[#62BA1B] border-2 box"
-        >Let's Get Started ></button
-      >
+
+      <a href="#study-plans">
+        <button
+          class="py-6 px-16 text-[#FFFFFF] bg-[#3F8E00] hover:bg-[#2F6B00] w-fit rounded-sm font-bold text-[16px] border-[#62BA1B] border-2 box"
+        >
+          Let's Get Started >
+        </button>
+      </a>
+      
 
       <div class="flex flex-row" style="gap: 20px;">
         <a
@@ -36,6 +41,9 @@
         </a>
         <a href="https://wa.me/message/CASFE6CD3FVQI1" target="_blank">
           <SocialIcons alt="whatsapp" network="whatsapp" />
+        </a>
+        <a href="mailto:pa@abdulbasitpawar.com" target="_blank">
+          <SocialIcons alt="email" network="email" /> <!-- Email icon component -->
         </a>
       </div>
     </div>

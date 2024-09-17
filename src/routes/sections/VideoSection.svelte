@@ -1,6 +1,6 @@
-<section id="content-section" class="content-section flex bg-[#080808] px-32">
+<section id="content-section" class="content-section flex justify-between bg-white px-32 my-10">
   <div>
-    <div class="bg-green-400 h-40 w-80"></div>
+    <div class="bg-green-400 h-[200px] w-[400px]"></div>
     <!-- TODO: Aaraiz please replace your video code here and make it work -->
     <!-- <div class="carousel slide">
       
@@ -63,10 +63,11 @@
       
     </div> -->
   </div>
-  <div class="mission-vision text-white ml-10 mb-10">
+  
+  <div class="mission-vision text-black max-w-[60%]">
     <h2 class="font-extrabold text-[30px]">My Mission</h2>
     <p
-      class="text-[#9C9C9C] font-normal text-[14px] leading-[24px] tracking-[1%]"
+      class="font-medium text-[#080808] text-[14px] leading-[24px] tracking-[1%]"
     >
       My mission is to provide a transformative educational experience that
       fosters intellectual curiosity, critical thinking, and innovation. I am
@@ -76,7 +77,7 @@
     </p>
     <h2 class="font-extrabold text-[30px]">My Vision</h2>
     <p
-      class="text-[#9C9C9C] font-normal text-[14px] leading-[24px] tracking-[1%]"
+      class="text-[#080808] font-medium text-[14px] leading-[24px] tracking-[1%]"
     >
       My vision is to be a leading academic institution recognized for
       excellence in education, research, and community engagement. I aspire to

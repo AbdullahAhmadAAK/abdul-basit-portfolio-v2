@@ -8,12 +8,12 @@
     {
       title: "THE JOURNEY",
       description:
-        "Abdul Basit's journey is a unique one, taking him from the world of entrepreneurship to help students as a tutor. He is the Co-founder of bikechaiye.com, the pioneering fuel bike rental service for university students and Yodobikes.com, the only electric scooter sharing service in Pakistan. Despite achieving entrepreneurial acclaim initially, Abdul Basit felt a calling to pursue a path that allowed him to help students.",
+        "Abdul Basit's journey is a unique one, taking him from the world of entrepreneurship to help students as a tutor. He is the Co-founder of <a href='https://bikechaiye.com' target='_blank' class='text-blue-600 underline'>bikechaiye.com</a>, the pioneering fuel bike rental service for university students, and <a href='https://yodobikes.com' target='_blank' class='text-blue-600 underline'>yodobikes.com</a>, the only electric scooter sharing service in Pakistan. Despite achieving entrepreneurial acclaim initially, Abdul Basit felt a calling to pursue a path that allowed him to help students.",
     },
     {
       title: "THE TRANSITION",
       description:
-        "AbdulBasit's transition from entrepreneur to math tutor stemmed from a desire to devote himself for mathematics. He began by assisting more than a thousand students at LUMS Math Circles, drawing on his own experiences and challenges to connect with students. He then started working as a private tutor for mathematics and enjoying it till today. His relatable approach and simple language made him students’ favourite.",
+        "Abdul Basit's transition from entrepreneur to math tutor stemmed from a desire to devote himself for mathematics. He began by assisting more than a thousand students at LUMS Math Circles, drawing on his own experiences and challenges to connect with students. He then started working as a private tutor for mathematics and enjoying it till today. His relatable approach and simple language made him students’ favourite.",
     },
   ];
 </script>
@@ -25,17 +25,17 @@
   <div class="about-container flex flex-col px-32 mt-10">
     <div class="flex gap-8">
       <div
-        class="border border-[#ddd] rounded-lg shadow-md flex-1 overflow-hidden"
+        class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"
       >
         <img src="/about-1.jpg" alt="About 1" />
       </div>
       <div
-        class="border border-[#ddd] rounded-lg shadow-md flex-1 overflow-hidden"
+        class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"
       >
         <img src="/about-2.jpg" alt="About 2" />
       </div>
       <div
-        class="border border-[#ddd] rounded-lg shadow-md flex-1 overflow-hidden"
+        class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"
       >
         <img src="/about-3.jpg" alt="About 3" />
       </div>
@@ -43,7 +43,7 @@
     <div class="flex gap-8">
       {#each boxes as box}
         <div
-          class="bg-[#ebf5ff] border border-1 text-center shadow-md flex flex-col gap-4 flex-1 border-[#ddd] rounded-lg p-5"
+          class="bg-[#ebf5ff] border border-1 text-center shadow-md flex flex-col gap-4 flex-1 border-[#ddd] rounded-b-lg p-5"
         >
           <h3 class="font-extrabold text-[30px] text-[#080808]">
             {box.title}
@@ -51,7 +51,7 @@
           <p
             class=" font-medium text-[14px] leading-[24px] tracking-[1%] content-center text-[#080808]"
           >
-            {box.description}
+            {@html box.description}
           </p>
         </div>
       {/each}

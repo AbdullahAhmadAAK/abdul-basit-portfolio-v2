@@ -15,10 +15,10 @@
   <HeaderSection/>
   <HeroSection/>
 </div>
+<VideoSection/>
 <AboutSection/>
 <GridSection/>
 <QualificationSection/>
-<VideoSection/>
 
 <ResearchSection/>
 <StudyPlanSection/>

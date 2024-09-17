@@ -1,19 +1,18 @@
 <script>
   let faqs = [
     {
-      question: "What is SvelteKit?",
-      answer: "SvelteKit is a framework for building web applications.",
+      question: "Do I need to pay the fees in advance?",
+      answer: "Yes, you need to pay the monthly tuition fee after Free Trial/Demo session.",
       isOpen: false,
     },
     {
-      question: "How does reactivity work in Svelte?",
-      answer: "Svelte uses reactive assignments to track data changes.",
+      question: "Is there any registration fees?",
+      answer: "Yes, a registration fee of Rs 5000 or USD 50 also applies unless stated otherwise.",
       isOpen: false,
     },
     {
-      question: "What is a store in Svelte?",
-      answer:
-        "A store in Svelte is an object that holds a value and allows you to reactively subscribe to it.",
+      question: "Will my scores improve after taking classes?",
+      answer: "Score improvement is usually visible in 3-4 months provided that you complete the assignments.",
       isOpen: false,
     },
   ];
