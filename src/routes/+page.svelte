@@ -16,7 +16,7 @@
   <HeroSection/>
 </div>
 <VideoSection/>
-<AboutSection/>
+<!-- <AboutSection/> -->
 <GridSection/>
 <QualificationSection/>
 
