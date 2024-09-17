@@ -3,7 +3,7 @@
 </script>
 
 <section id="home">
-  <div class="flex px-32 pb-16">
+  <div class="flex justify-between px-32 pb-16">
     <div class="flex flex-col gap-6">
       <h1
         class="text-white w-[426px] h-[52px] font-extrabold text-[44px] leading-[51.66px]"
@@ -13,8 +13,7 @@
       <p
         class="text-[#9C9C9C] w-[70%] h-[72px] font-normal text-[14px] leading-[24px] tracking-[1%]"
       >
-        Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Bridging Knowledge and Innovation: Expert Mathematics Tutor and Visionary Entrepreneur.
       </p>
 
       <a href="#study-plans">
