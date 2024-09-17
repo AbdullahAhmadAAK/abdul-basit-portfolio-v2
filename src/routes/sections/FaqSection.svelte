@@ -1,4 +1,6 @@
 <script>
+  import { sectionHorizontalPadding } from "../../lib/styles";
+  
   let faqs = [
     {
       question: "Do I need to pay the fees in advance?",
@@ -18,11 +20,14 @@
   ];
 
   function toggleFAQ(index) {
-    faqs[index].isOpen = !faqs[index].isOpen;
+    faqs = faqs.map((faq, i) => ({
+      ...faq,
+      isOpen: i === index ? !faq.isOpen : false
+    }));
   }
 </script>
 
-<section class="px-32 mt-10">
+<section class="{sectionHorizontalPadding} mt-10">
   <h4 class="font-extrabold text-[30px] text-center">
     Frequently Asked Questions
   </h4>

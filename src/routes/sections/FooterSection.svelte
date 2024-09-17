@@ -1,38 +1,57 @@
 <script>
+  import { onMount } from 'svelte';
   import SocialIcons from "@rodneylab/svelte-social-icons"; // Import the SocialIcons component
 
-// Links for the footer
-const links = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Qualifications", href: "#qualification" },
-  { name: "Study Plans", href: "#study-plans" },
-];
+  // Links for the footer
+  const links = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Qualifications", href: "#qualification" },
+    { name: "Study Plans", href: "#study-plans" },
+  ];
 
-// Social media icon data for SocialIcons component
-const socialIcons = [
-  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=100071005491576", network: "facebook" },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/abdulbasitpawar/", network: "linkedin" },
-  { name: "YouTube", href: "https://www.youtube.com/@AbdulBasitpawarmath", network: "youtube" },
-  { name: "WhatsApp", href: "https://wa.me/message/CASFE6CD3FVQI1", network: "whatsapp" },
-];
+  // Social media icon data for SocialIcons component
+  const socialIcons = [
+    { name: "Facebook", href: "https://www.facebook.com/profile.php?id=100071005491576", network: "facebook" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/abdulbasitpawar/", network: "linkedin" },
+    { name: "YouTube", href: "https://www.youtube.com/@AbdulBasitpawarmath", network: "youtube" },
+    { name: "WhatsApp", href: "https://wa.me/message/CASFE6CD3FVQI1", network: "whatsapp" },
+    { name: 'Email', href: 'mailto:pa@abdulbasitpawar.com', network: 'email' }
+  ];
+
+  let isSmallScreen = false;
+  let socialIconSize = '24'; // Default size
+
+  onMount(() => {
+    // Check initial screen size
+    checkScreenSize();
+
+    // Add event listener for resizing
+    window.addEventListener('resize', checkScreenSize);
+    
+    return () => window.removeEventListener('resize', checkScreenSize);
+  });
+
+  function checkScreenSize() {
+    isSmallScreen = window.innerWidth < 768; // Adjust breakpoint as needed
+    socialIconSize = isSmallScreen ? '32' : '48'; // Adjust sizes as needed
+  }
 </script>
 
 <footer class="bg-black text-white py-10">
-  <div
-    class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start"
-  >
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
+    
     <!-- Logo Section -->
-    <div class="mb-6 md:mb-0">
-      <img src="/abdul-basit-logo.jpg" alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-40 w-auto" />
+    <div class="flex-shrink-0 text-center md:text-left mx-auto md:mx-0">
+      <img src="/abdul-basit-logo.jpg" alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-32 w-auto mx-auto md:mx-0" />
     </div>
 
     <!-- Links/Resources Section -->
-    <div class="text-left mb-6 md:mb-0">
+    <div class="text-center md:text-left mx-auto md:mx-0">
       <h2 class="text-xl font-semibold mb-4">Links/Resources</h2>
-      <ul>
+      <ul class="space-y-2">
         {#each links as link}
-          <li class="mb-2">
+          <li>
             <a href={link.href} class="hover:text-gray-400">{link.name}</a>
           </li>
         {/each}
@@ -40,17 +59,21 @@ const socialIcons = [
     </div>
 
     <!-- Socials Section -->
-    <div class="text-left mb-6 md:mb-0"> <!-- Align left instead of center -->
+    <div class="text-center md:text-left mx-auto md:mx-0">
       <h2 class="text-xl font-semibold mb-4">Socials</h2>
-      <div class="flex space-x-4">
+      <div class="flex justify-center md:justify-start space-x-4">
         {#each socialIcons as social}
-          <a href={social.href} target="_blank" class="hover:text-gray-400">
-            <SocialIcons alt={social.name} network={social.network} />
-          </a>
+            {#key isSmallScreen}
+              <a href={social.href} target="_blank" class="hover:text-gray-400">
+                <SocialIcons
+                  alt={"Icon for Abdul Basit Pawar's " + social.name + " account"}
+                  network={social.network}
+                  height={socialIconSize}
+                  width={socialIconSize}
+                />
+              </a>
+            {/key}
         {/each}
-        <a href="mailto:pa@abdulbasitpawar.com" target="_blank">
-          <SocialIcons alt="email" network="email" /> <!-- Email icon component -->
-        </a>
       </div>
     </div>
   </div>

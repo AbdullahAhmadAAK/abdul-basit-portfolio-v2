@@ -1,8 +1,12 @@
+<script>
+  import { sectionHorizontalPadding } from "../../lib/styles";
+</script>
+
 <section
   id="qualification"
-  class="qualification bg-[#080808] px-32 py-16 flex text-white justify-between items-center"
+  class="qualification bg-[#080808] {sectionHorizontalPadding} py-16 flex md:flex-row flex-col-reverse text-white justify-between items-center"
 >
-  <div class="flex-1 max-w-[50%]">
+  <div class="flex-1 md:max-w-[50%]">
     <h3 class="font-extrabold text-[36px] mb-4">Academic Qualifications</h3>
     <div class="space-y-2">
       <p class="text-[#9C9C9C] font-medium text-[16px] leading-[28px]">

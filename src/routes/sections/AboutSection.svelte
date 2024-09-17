@@ -1,4 +1,5 @@
 <script>
+  import { sectionHorizontalPadding } from "../../lib/styles";
   let boxes = [
     {
       title: "THE PERSON",
@@ -22,7 +23,7 @@
   <h3 class="text-center h-10 font-extrabold text-[34px] text-[#080808]">
     About
   </h3>
-  <div class="about-container flex flex-col px-32 mt-10">
+  <div class="about-container flex flex-col {sectionHorizontalPadding} mt-10">
     <div class="flex gap-8">
       <div
         class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"

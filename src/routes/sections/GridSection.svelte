@@ -1,7 +1,8 @@
 <script>
+  import { sectionHorizontalPadding } from "../../lib/styles";
 </script>
 
-<div class="flex justify-between px-32 h-32 items-center my-16 text-center">
+<div class="flex justify-between {sectionHorizontalPadding} h-32 items-center my-16 text-center">
   <h4 class="font-bold align-middle font-serif">
     <span class="text-[30px]">770/800</span> <br /><span class="text-[15px]"
       >SAT (Math)</span
