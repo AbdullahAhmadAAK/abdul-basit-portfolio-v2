@@ -7,7 +7,7 @@
   <div class="container mx-auto flex justify-between items-center py-4 px-32">
     <!-- Logo -->
     <div class="mb-6 md:mb-0 bg-gray-800">
-      <img src="/basit-logo-abp.jpg" alt="Logo" class="h-24 w-auto" />
+      <img src="/abdul-basit-logo.jpg" alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-24 w-auto" />
     </div>
     <!-- Navigation -->
     <nav class="flex space-x-8">

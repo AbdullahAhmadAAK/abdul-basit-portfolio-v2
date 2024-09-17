@@ -18,8 +18,8 @@
 
   <div class="flex-1">
     <img
-      src="/qualification-1.jpg"
-      alt="Graduation"
+      src="/abdul-basit-graduation-mother.jpg"
+      alt="Abdul Basit Pawar with his mother at his graduation ceremony"
       class="rounded-lg h-[400px] object-cover"
     />
   </div>

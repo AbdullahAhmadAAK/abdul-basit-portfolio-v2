@@ -48,7 +48,7 @@
     </div>
 
     <div class="overflow-hidden rounded-full h-fit">
-      <img src="/abdul-basit-pawar-passport-size-picture.png" alt="" />
+      <img src="/abdul-basit-passport-photo.png" alt="Abdul Basit passport size photo with white background" />
     </div>
   </div>
 </section>

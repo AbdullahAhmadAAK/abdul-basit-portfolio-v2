@@ -24,7 +24,7 @@ const socialIcons = [
   >
     <!-- Logo Section -->
     <div class="mb-6 md:mb-0">
-      <img src="/basit-logo-abp.jpg" alt="Logo" class="h-40 w-auto" />
+      <img src="/abdul-basit-logo.jpg" alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-40 w-auto" />
     </div>
 
     <!-- Links/Resources Section -->

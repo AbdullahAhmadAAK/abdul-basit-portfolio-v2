@@ -4,13 +4,15 @@
       title: "An Empirical Analysis of Amazon Product Sales: A Comprehensive Study on the Applicability of Zipf’s Law",
       supervisor: "Dr. Sultan Sial, Associate Professor",
       knowMoreLink: "https://sbasse.lums.edu.pk/applying-math-in-real-world",
-      image: "zipfs-law-research.png",
+      image: "abdul-basit-presentation-research-1.png",
+      alt: "Abdul Basit Pawar giving a presentation for a research paper on Applicability of Zipf's Law"
     },
     {
       title: 'Verification of Study: "Impact of School Closures and Reopening on Covid-19 Caseload in 6 Cities of Pakistan"',
       supervisor: "Dr. Sultan Sial, Associate Professor",
       knowMoreLink: "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0000648",
       image: "corona-research.jpg",
+      alt: "Placeholder for random research papers"
     },
   ];
 </script>
@@ -24,7 +26,7 @@
     {#each works as work}
       <div class="flex flex-col items-center gap-4 w-[300px]">
         <div class="w-full h-[200px] overflow-hidden rounded-lg shadow-lg">
-          <img src={work.image} alt={work.title} class="w-full h-full object-cover" />
+          <img src={work.image} alt={work.alt} class="w-full h-full object-cover" />
         </div>
         <h4 class="font-extrabold text-[22px] text-[#080808] leading-tight">{work.title}</h4>
         <p class="text-[#9C9C9C] font-normal text-[14px] leading-[24px]">

@@ -27,17 +27,17 @@
       <div
         class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"
       >
-        <img src="/about-1.jpg" alt="About 1" />
+        <img src="/abdul-basit-portrait-1.jpg" alt="Abdul Basit Pawar, a math tutor and entrepreneur, portrait number 1" />
       </div>
       <div
         class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"
       >
-        <img src="/about-2.jpg" alt="About 2" />
+        <img src="/abdul-basit-portrait-2.jpg" alt="Abdul Basit Pawar, a math tutor and entrepreneur, portrait number 2" />
       </div>
       <div
         class="border border-[#ddd] rounded-t-lg shadow-md flex-1 overflow-hidden"
       >
-        <img src="/about-3.jpg" alt="About 3" />
+        <img src="/abdul-basit-portrait-3.jpg" alt="Abdul Basit Pawar, a math tutor and entrepreneur, portrait number 3" />
       </div>
     </div>
     <div class="flex gap-8">
