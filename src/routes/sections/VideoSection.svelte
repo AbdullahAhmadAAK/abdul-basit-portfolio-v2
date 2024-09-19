@@ -7,8 +7,6 @@
   id="content-section"
   class="flex flex-col lg:flex-row justify-between bg-white {sectionHorizontalPadding} my-10"
 >
-  <div class="flex-1 mb-6 lg:mb-0">
-    <div class="bg-green-400 h-[200px] lg:h-[300px] w-full lg:w-[400px]">
       <Carousel>
         <video class="h-full w-full rounded-lg" controls>
           <track kind="captions" />
@@ -21,7 +19,6 @@
           Your browser does not support the video tag.
         </video>
       </Carousel>
-    </div>
 
     <!-- Mission and Vision Section -->
     <div class="flex flex-col gap-4 flex-1 max-w-full lg:max-w-[60%]">
@@ -45,5 +42,14 @@
         inclusivity, and drives social progress.
       </p>
     </div>
-  </div>
 </section>
+
+<style>
+  .control :global(svg) {
+		width: 400px;
+		height: 400px;
+		color: #fff;
+		border: 2px solid #fff;
+		border-radius: 32px;
+	}
+</style>
