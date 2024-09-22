@@ -19,6 +19,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@rodneylab/svelte-social-icons": "^0.0.30"
+		"@rodneylab/svelte-social-icons": "^0.0.30",
+		"svelte-carousel": "github:vadimkorr/svelte-carousel#pull/142/head",
+		"svelte-tiny-slider": "^1.0.0"
 	}
 }

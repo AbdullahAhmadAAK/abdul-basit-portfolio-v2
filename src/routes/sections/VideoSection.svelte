@@ -1,76 +1,31 @@
 <script>
   import { sectionHorizontalPadding } from "../../lib/styles";
+  import Carousel from "svelte-carousel";
 </script>
 
+<link
+  href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+/>
 <section
   id="content-section"
   class="flex flex-col lg:flex-row justify-between bg-white {sectionHorizontalPadding} my-10"
 >
-  <div class="flex-1 mb-6 lg:mb-0">
-    <div class="bg-green-400 h-[200px] lg:h-[300px] w-full lg:w-[400px]"></div>
-    <!-- TODO: Aaraiz please replace your video code here and make it work -->
-    <!-- <div class="carousel slide">
-      
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target=""
-          aria-label="Slide 1"
-          aria-current="false"
-        ></button><button
-          type="button"
-          data-bs-target=""
-          aria-label="Slide 2"
-          aria-current="true"
-          class="active"
-        ></button>
-      </div>
-
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <a
-            href="https://www.youtube.com/embed/VwSFpOGAwKg?si=GmEegiiwDJAJqBv1"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="w-full h-[200px] lg:w-[640px] lg:h-[360px]">
-              <video
-                src="/video-1.mp4"
-                preload="auto"
-                controls
-                class="w-full h-full object-cover"
-              ></video>
-            </div></a
-          >
-        </div>
-        <div class="active carousel-item">
-          <a
-            href="https://www.youtube.com/embed/d8gqXgLzSDk?si=v9Y1p7H9TEAOjYXC"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><div class="w-full h-[200px] lg:w-[640px] lg:h-[360px]">
-              <video
-                src="/video-2.mp4"
-                preload="auto"
-                controls
-                autoplay
-                class="w-full h-full object-cover"
-              ></video>
-            </div></a
-          >
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" role="button" tabindex="0" href="#"
-        ><span aria-hidden="true" class="carousel-control-prev-icon"
-        ></span><span class="visually-hidden">Previous</span></a
-      ><a class="carousel-control-next" role="button" tabindex="0" href="#"
-        ><span aria-hidden="true" class="carousel-control-next-icon"
-        ></span><span class="visually-hidden">Next</span></a
-      >
-      
-    </div> -->
+  <div
+    class="intro intro2 max-h-[200px] max-w[400px] [sm:max-h-[200px] sm:max-w-[400px] sm:ml-16 sm:mb-6 md:max-h-[200px] md:max-w-[400px] lg:max-h-[200px] lg: lg:max-w-[400px] lg:mr-24 xl:max-h-[400px] xl:max-w-[400px] 2xl:max-w-[400px] 2xl:max-h-[400px]"
+  >
+    <Carousel>
+      <video class="h-[full] w-full rounded-lg" controls>
+        <track kind="captions" />
+        <source src="vid1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video class="h-full w-full rounded-lg" controls>
+        <track kind="captions" />
+        <source src="vid2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </Carousel>
   </div>
-
   <!-- Mission and Vision Section -->
   <div class="flex flex-col gap-4 flex-1 max-w-full lg:max-w-[60%]">
     <h2 class="font-extrabold text-2xl md:text-3xl lg:text-4xl">My Mission</h2>
@@ -92,3 +47,18 @@
     </p>
   </div>
 </section>
+
+<style>
+  .control :global(svg) {
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 32px;
+  }
+  @media only screen and (min-width: 973px) {
+    .intro {
+      margin-left: 150px;
+    }
+  }
+</style>
