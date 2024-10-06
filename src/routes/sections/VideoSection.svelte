@@ -11,7 +11,7 @@
   class="flex flex-col lg:flex-row justify-between bg-white {sectionHorizontalPadding} my-10"
 >
   <div
-    class="intro intro2 max-h-[200px] max-w[400px] [sm:max-h-[200px] sm:max-w-[400px] sm:ml-16 sm:mb-6 md:max-h-[200px] md:max-w-[400px] lg:max-h-[200px] lg: lg:max-w-[400px] lg:mr-24 xl:max-h-[400px] xl:max-w-[400px] 2xl:max-w-[400px] 2xl:max-h-[400px]"
+    class="max-w-[400px] min-h-[400px]"
   >
     <Carousel>
       <video class="h-[full] w-full rounded-lg" controls>
@@ -56,9 +56,5 @@
     border: 2px solid #fff;
     border-radius: 32px;
   }
-  @media only screen and (min-width: 973px) {
-    .intro {
-      margin-left: 150px;
-    }
-  }
+
 </style>

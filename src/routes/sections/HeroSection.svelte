@@ -37,8 +37,7 @@
         <p
           class="text-gray-400 text-sm md:text-base lg:text-lg leading-relaxed md:text-left text-center mx-auto md:mx-0"
         >
-          Bridging Knowledge and Innovation: Expert Mathematics Tutor and
-          Visionary Entrepreneur.
+          Bridging Knowledge and Innovation: Expert Mathematics Tutor.
         </p>
 
         <a href="#study-plans" class="w-fit mx-auto md:mx-0">

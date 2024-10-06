@@ -63,7 +63,7 @@
     {#each boxes as box}
       <div class="flex flex-col gap-4 bg-white rounded-xl shadow-lg p-4 md:p-6 w-full md:w-[45%]">
         <div class="mb-4 md:mb-6">
-          <img src={box.image} alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-16 md:h-24 w-auto mx-auto md:mx-0" />
+          <img src={box.image} alt="Logo of Abdul Basit Pawar, Math tutor" class="h-16 md:h-24 w-auto mx-auto md:mx-0" />
         </div>
 
         <div class="flex flex-col md:flex-row justify-between items-center">

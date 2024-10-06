@@ -8,7 +8,7 @@
   <div class="container mx-auto {sectionHorizontalPadding} py-4 flex items-center justify-between">
     <!-- Logo -->
     <div class="mb-4 md:mb-0">
-      <img src="/abdul-basit-logo.png" alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-16 w-auto md:h-24" />
+      <img src="/abdul-basit-logo.png" alt="Logo of Abdul Basit Pawar, Math tutor" class="h-16 w-auto md:h-24" />
     </div>
     <!-- Navigation -->
     <nav class="md:w-auto flex flex-col md:flex-row md:space-x-8 items-center">

@@ -43,7 +43,7 @@
     
     <!-- Logo Section -->
     <div class="flex-shrink-0 text-center md:text-left mx-auto md:mx-0">
-      <img src="/abdul-basit-logo.png" alt="Logo of Abdul Basit Pawar, math tutor and entrepreneur" class="h-32 w-auto mx-auto md:mx-0" />
+      <img src="/abdul-basit-logo.png" alt="Logo of Abdul Basit Pawar, Math tutor" class="h-32 w-auto mx-auto md:mx-0" />
     </div>
 
     <!-- Links/Resources Section -->
